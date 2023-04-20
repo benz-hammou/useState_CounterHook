@@ -1,28 +1,13 @@
 import './App.css';
-import React, { useState } from 'react';
-
+import Count from './components/count.js';
 
 function App() {
-  const [count, setCount] = useState(0)
-  // actual veranderaar begin default => hello
-
-  function decrement() {
-    // setCount(count - 1) 
-    //inscope problem variables overwriting 
-    setCount(prevCount => prevCount - 1)
-  } function increment() {
-    setCount(prevCount => prevCount + 1)
-  }
 
   return (
     <div className="App">
-      <header className="App-header">
-        <button onClick={decrement}>-</button>
-        <span>{count}</span>
-        <button onClick={increment}>+</button>
-      </header>
+     <Count/>
     </div>
-  );
+  )
 }
 
 export default App;

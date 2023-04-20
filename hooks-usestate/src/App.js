@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 function App() {
   const [count, setCount] = useState(0)
-  // actual veranderaar begin default
+  // actual veranderaar begin default => hello
 
   function decrement() {
     // setCount(count - 1) 
